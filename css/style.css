@@ -122,7 +122,6 @@ article{
     position: relative;
     width: 355px;
     height: 450px;
-    /*margin-bottom: 3%;*/
     margin: 15px 40px;
 
 }
@@ -149,7 +148,7 @@ article{
 .descripcion button{
     border: none;
     border-radius: 1px;
-    width: 50%; /*100px*/
+    width: 50%; 
     height: 25px;
     background-color: rgba(116, 164, 236, 0.973);
     font-size: 12px;
@@ -303,7 +302,6 @@ input[id="primerProducto2"]:checked ~ .pagination .pagination-item[for="primerPr
 }
 
 input[id="primerProducto3"]:checked ~.slide{
-    /*animation: none;*/
     transform: translate3d(calc(-100% * 2), 0, 0);
 }
 
@@ -312,7 +310,6 @@ input[id="primerProducto3"]:checked ~ .pagination .pagination-item[for="primerPr
 }
 
 input[id="segundoProducto1"]:checked ~.slide{
-   /* animation: none;*/
     transform: translate3d(0, 0, 0);
 }
 
@@ -321,7 +318,6 @@ input[id="segundoProducto1"]:checked ~ .pagination .pagination-item[for="segundo
 }
 
 input[id="segundoProducto2"]:checked ~.slide{
-    /*animation: none;*/
     transform: translate3d(calc(-100% * 1), 0, 0);
 }
 
@@ -330,7 +326,6 @@ input[id="segundoProducto2"]:checked ~ .pagination .pagination-item[for="segundo
 }
 
 input[id="segundoProducto3"]:checked ~.slide{
-   /* animation: none;*/
     transform: translate3d(calc(-100% * 2), 0, 0);
 }
 
@@ -340,7 +335,6 @@ input[id="segundoProducto3"]:checked ~ .pagination .pagination-item[for="segundo
 
 
 input[id="tercerProducto1"]:checked ~.slide{
-    /*animation: none;*/
     transform: translate3d(0, 0, 0);
 }
 
@@ -349,7 +343,6 @@ input[id="tercerProducto1"]:checked ~ .pagination .pagination-item[for="tercerPr
 }
 
 input[id="tercerProducto2"]:checked ~.slide{
-    /*animation: none;*/
     transform: translate3d(calc(-100% * 1), 0, 0);
 }
 
@@ -358,7 +351,6 @@ input[id="tercerProducto2"]:checked ~ .pagination .pagination-item[for="tercerPr
 }
 
 input[id="tercerProducto3"]:checked ~.slide{
-    /*animation: none;*/
     transform: translate3d(calc(-100% * 2), 0, 0);
 }
 
@@ -366,23 +358,6 @@ input[id="tercerProducto3"]:checked ~ .pagination .pagination-item[for="tercerPr
     background: #fff;
 }
 
-
-/*
-@keyframes autoplay{ 
-    33%{
-        transform: translate3d(calc(-100% * 0), 0, 0);
-    }
-
-    66%{
-        transform: translate3d(calc(-100% * 1), 0, 0);
-    }
-
-    100%{
-        transform: translate3d(calc(-100% * 2), 0, 0);
-    }
-
-}
-*/
 
 
 /*------------------------------------------------------ SECCION 2 ----------------------------------------------------------*/
@@ -394,7 +369,6 @@ input[id="tercerProducto3"]:checked ~ .pagination .pagination-item[for="tercerPr
 }
 
 .texto-descriptivo{
-    /*background-color: rgba(217, 135, 238, 0.849);*/
     background-image: linear-gradient(to bottom, rgba(253, 253, 253, 0.699) 0%,  rgba(253, 253, 253, 0.452) 100%), url(../img/mike-labrum-fvl4b1gjpbk-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -442,7 +416,7 @@ input[id="tercerProducto3"]:checked ~ .pagination .pagination-item[for="tercerPr
     color: rgba(160, 12, 219, 0.705);
     font-size: 18px;
     font-weight: 500;
-    text-shadow: 1px 1px 0.5px #000000;  /*0 -1px 1px*/  
+    text-shadow: 1px 1px 0.5px #000000;  
 }
 
 
@@ -453,7 +427,7 @@ input[id="tercerProducto3"]:checked ~ .pagination .pagination-item[for="tercerPr
 }
 
 .solapa input:checked ~ .contenido{
-    max-height: 200px; /*100vh*/
+    max-height: 200px; 
 }
 
 
