@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
 
 
-* { /*::before, ::after*/
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    /*background-image: linear-gradient(to top, rgb(243, 183, 193) 0%, rgb(180, 206, 245) 99%, rgb(172, 198, 238) 100%);*/
     background-color: rgb(146, 184, 241);
     font-family: 'Tiro Telugu', serif;
     display: flex;
@@ -66,7 +65,6 @@ a:hover{
 
 form .grupo{
     position: relative;
-    /*margin: 45px;*/
     margin: 30px 45px 35px;
 }
 
@@ -89,9 +87,9 @@ input:focus,textarea:focus{
 
 
 input:focus~label, input:valid~label, 
-textarea:focus~label, textarea:valid~label{ /*cuando input esta en modo focus y en valid, se quiere que a label se le haga lo de acontinuacion*/
+textarea:focus~label, textarea:valid~label{ 
     position: absolute;
-    top: -14px; /*se desplaza hacia arriba*/
+    top: -14px; 
     font-size: 15px;
     font-weight: 400;
     color: rgb(152, 85, 179);
