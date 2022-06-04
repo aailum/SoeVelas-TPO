@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
 
-*{ /*::before, ::after*/
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    /*background-image: linear-gradient(to top, rgb(243, 183, 193) 0%, rgb(180, 206, 245) 99%, rgb(172, 198, 238) 100%);*/
     background-color: rgb(243, 183, 193);
     font-family: 'Tiro Telugu', serif;
     width: 100%;
@@ -36,7 +35,7 @@ h1{
     text-decoration: underline;
 }
 
-/*.subtitulo*/ #aviso{
+ #aviso{
     text-align: center;
     font-size: 13px;
     font-weight: bold;
@@ -60,22 +59,22 @@ input, textarea{
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
-    border: none; /*saca los bordes*/
-    border-bottom: 1px solid #49454567; /*modifica el borde inferior*/
-    resize: none; /*no deja que se agrande o achiquen las casillas, en especial la de comentarios*/
+    border: none; 
+    border-bottom: 1px solid #49454567; 
+    resize: none; 
 
 }
 
-input:focus,textarea:focus{ /*el focus es cuando se esta adentro de las casillas*/
+input:focus,textarea:focus{ 
     outline: none;
     color: rgb(94, 93, 93);
 }
 
 
 input:focus~label, input:valid~label, 
-textarea:focus~label, textarea:valid~label{ /*cuando input esta en modo focus y en el valido se quiere que a label se le haga algo*/
+textarea:focus~label, textarea:valid~label{ 
     position: absolute;
-    top: -14px; /*se desplaza haci arriba*/
+    top: -14px; 
     font-size: 12px;
     font-weight: 300;
     color: rgb(152, 85, 179);
