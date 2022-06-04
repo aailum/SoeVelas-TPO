@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
+
+*{ /*::before, ::after*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-image: linear-gradient(to top, rgb(243, 183, 193) 0%, rgb(180, 206, 245) 99%, rgb(172, 198, 238) 100%);*/
+    background-color: rgb(243, 183, 193);
+    font-family: 'Tiro Telugu', serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+form{
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    max-width: 400px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px 2px rgba(0, 0, 0, 0.623);
+}
+
+
+h1{
+    text-align: center;
+    margin: 10px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/*.subtitulo*/ #aviso{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(253, 2, 44);
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input, textarea{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none; /*saca los bordes*/
+    border-bottom: 1px solid #49454567; /*modifica el borde inferior*/
+    resize: none; /*no deja que se agrande o achiquen las casillas, en especial la de comentarios*/
+
+}
+
+input:focus,textarea:focus{ /*el focus es cuando se esta adentro de las casillas*/
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+
+input:focus~label, input:valid~label, 
+textarea:focus~label, textarea:valid~label{ /*cuando input esta en modo focus y en el valido se quiere que a label se le haga algo*/
+    position: absolute;
+    top: -14px; /*se desplaza haci arriba*/
+    font-size: 12px;
+    font-weight: 300;
+    color: rgb(152, 85, 179);
+}
+
+label{
+    color: #49454567;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.4s ease all;
+    pointer-events: none;
+    
+}
+
+input:focus~.barra::before, textarea:focus~.barra::before {
+    width: 100%;
+
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgb(240, 149, 164);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+button{
+    background-image: linear-gradient(to top, rgb(245, 150, 166) 0%, rgb(145, 183, 240) 99%, rgb(145, 183, 240) 100%);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#boton1{
+    float: left;
+    margin: 10px 10px 20px 80px;
+}
+
+#boton2{
+    float: right;
+    margin: 10px 80px 20px 10px;  
+}
+
+#boton1:hover, #boton2:hover{
+    box-shadow: 1px 1px 5px 3px rgba(75, 73, 73, 0.918);
+    font-weight: 600;
+}
+
+#cancelar{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*----------------------------------------------------- INICIO RESPONSIVE -----------------------------------------------------------*/ 
+
+@media all and (min-width:1021px){
+
+    body{
+        width: 100%;
+    }
+
+    form{
+        width: 30%;
+    
+    }
+
+    #boton1{
+        float: left;
+        margin: 10px 10px 20px 40px;
+    }
+    
+    #boton2{
+        float: right;
+        margin: 10px 40px 20px 10px;  
+    }
+
+}
+
+
+
+@media all and (min-width:600px) and (max-width:1020px){
+
+    body{
+        width: 100%;
+    }
+    
+    form{
+        width: 60%;
+    }
+
+    #boton1{
+        float: left;
+        margin: 10px 10px 20px 40px;
+    }
+    
+    #boton2{
+        float: right;
+        margin: 10px 40px 20px 10px;  
+    } 
+
+}
+
+
+
+@media all and (max-width:599px){
+    
+    body{
+        width: 100%;
+    }
+
+    form{
+        width: 70%;
+    }
+
+    #boton1{
+        float: left;
+        margin: 10px 10px 20px 20px;
+    }
+    
+    #boton2{
+        float: right;
+        margin: 10px 20px 20px 10px;  
+    }
+    
+}

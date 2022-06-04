@@ -1,0 +1,767 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Tiro Telugu', serif;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+
+/*--------------------------------------------------------- HEADER-----------------------------------------------------------------------*/
+header{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(244, 59, 71, 0.5) 0%, rgba(68, 58, 148, 0.5) 100%), url(../img/tina-witherspoon-9xEOFi3uGpM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+.head{
+    background-color: rgba(255, 255, 255, 0.582);
+    color:rgb(0, 0, 0);
+    width: 80%;
+    height: 20%;
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    text-align:center;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%) ;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+}
+
+
+.head h1{
+    padding: 5px;
+}
+
+.head p{
+    padding-bottom: 10px;
+    margin-top: -10px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.705);
+
+}
+
+#menu{
+    color: rgba(224, 60, 142, 0.952);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.menu-navegacion{
+    position: fixed;
+    width: 100%;
+    height: 3vw;
+    background-color: rgba(255, 255, 255, 0.979);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transition: transform .3s ease-in-out;
+    transform: translateY(-110%);
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.712);
+    z-index: 1;
+}
+
+
+header:hover .menu-navegacion{
+    transform: translateY(0%);
+}
+
+.menu-navegacion a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+/*------------------------------------------------------- SECCION 1 -----------------------------------------------------------------*/
+.contenedor-productos-all{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#velas h2{
+    color: rgba(78, 142, 236, 0.973);
+    text-shadow: 1px 1px 0.5px #000000e8;
+    font-size: 50px;
+}
+
+
+article{
+    position: relative;
+    width: 355px;
+    height: 450px;
+    /*margin-bottom: 3%;*/
+    margin: 15px 40px;
+
+}
+
+
+.descripcion{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /*border: 1px solid  rgba(185, 112, 134, 0.712);*/
+    position: absolute;
+    background-color: rgba(215, 228, 248, 0.8);
+    box-shadow: 5px 5px 5px rgba(94, 87, 95, 0.918);
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.descripcion h3{
+    margin-top: 3px;
+    margin-bottom: 1px;
+    font-weight: 800;
+}
+
+.descripcion button{
+    border: none;
+    border-radius: 1px;
+    width: 50%; /*100px*/
+    height: 25px;
+    background-color: rgba(116, 164, 236, 0.973);
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(27, 26, 27, 0.918);
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Tiro Telugu', serif;
+    margin-top: 0;
+    margin-bottom: 15px;
+    
+
+}
+
+.descripcion a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+.descripcion button:hover{
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.918);
+    animation-name: colores;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;   
+    
+}
+
+.descripcion button:hover a{
+    color: white;
+    font-weight: 450;
+}
+
+
+@keyframes colores{
+    0%{
+        background-color: rgba(240, 21, 57, 0.726);
+    }
+
+    25%{
+        background-color: rgba(245, 53, 203, 0.726);
+    }
+
+    50%{
+        background-color: rgba(207, 53, 245, 0.726);
+    }
+
+    100%{
+        background-color: rgba(72, 53, 245, 0.726);
+    }
+
+    
+}
+
+
+.contenedor-producto{
+    position: relative;
+    max-width: 453px;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(94, 87, 95, 0.918);
+}
+
+.slide{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 1000ms;
+
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.item-slide img{
+    max-width: 100%;
+
+}
+
+.pagination{
+    position:absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgb(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+input[id="primerProducto1"]:checked ~.slide{
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="primerProducto1"]:checked ~ .pagination .pagination-item[for="primerProducto1"]{
+    background: #fff;
+}
+
+input[id="primerProducto2"]:checked ~.slide{
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="primerProducto2"]:checked ~ .pagination .pagination-item[for="primerProducto2"]{
+    background: #fff;
+}
+
+input[id="primerProducto3"]:checked ~.slide{
+    /*animation: none;*/
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="primerProducto3"]:checked ~ .pagination .pagination-item[for="primerProducto3"]{
+    background: #fff;
+}
+
+input[id="segundoProducto1"]:checked ~.slide{
+   /* animation: none;*/
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="segundoProducto1"]:checked ~ .pagination .pagination-item[for="segundoProducto1"]{
+    background: #fff;
+}
+
+input[id="segundoProducto2"]:checked ~.slide{
+    /*animation: none;*/
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="segundoProducto2"]:checked ~ .pagination .pagination-item[for="segundoProducto2"]{
+    background: #fff;
+}
+
+input[id="segundoProducto3"]:checked ~.slide{
+   /* animation: none;*/
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="segundoProducto3"]:checked ~ .pagination .pagination-item[for="segundoProducto3"]{
+    background: #fff;
+}
+
+
+input[id="tercerProducto1"]:checked ~.slide{
+    /*animation: none;*/
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="tercerProducto1"]:checked ~ .pagination .pagination-item[for="tercerProducto1"]{
+    background: #fff;
+}
+
+input[id="tercerProducto2"]:checked ~.slide{
+    /*animation: none;*/
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="tercerProducto2"]:checked ~ .pagination .pagination-item[for="tercerProducto2"]{
+    background: #fff;
+}
+
+input[id="tercerProducto3"]:checked ~.slide{
+    /*animation: none;*/
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="tercerProducto3"]:checked ~ .pagination .pagination-item[for="tercerProducto3"]{
+    background: #fff;
+}
+
+
+/*
+@keyframes autoplay{ 
+    33%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    66%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+
+}
+*/
+
+
+/*------------------------------------------------------ SECCION 2 ----------------------------------------------------------*/
+
+#fragancias h2{
+    color: rgb(164, 88, 194);
+    text-shadow: 1px 1px 0.5px #000000e8;
+    font-size: 50px;
+}
+
+.texto-descriptivo{
+    /*background-color: rgba(217, 135, 238, 0.849);*/
+    background-image: linear-gradient(to bottom, rgba(253, 253, 253, 0.699) 0%,  rgba(253, 253, 253, 0.452) 100%), url(../img/mike-labrum-fvl4b1gjpbk-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 300px;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 5px;
+}
+
+.acordeon{
+    width: 50%;
+    padding: 0 20px;
+    height: 500px;
+    float: right;
+}
+
+.acordeon .solapa{
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.acordeon .solapa label{
+    background-color: rgba(217, 135, 238, 0.849);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    /*z-index: 99;*/
+}
+
+.acordeon label span{
+    color: rgba(160, 12, 219, 0.705);
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 1px 1px 0.5px #000000;  /*0 -1px 1px*/  
+}
+
+
+.acordeon .solapa .contenido{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.solapa input:checked ~ .contenido{
+    max-height: 200px; /*100vh*/
+}
+
+
+.acordeon .solapa .contenido p{
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+
+.acordeon input{
+    display: none;
+}
+
+/*-------------------------------------------------------- SECCION 3 ----------------------------------------------------------*/
+
+#imagen-nosotros {
+    background-image: url(../img/sixteen-miles-out-iSyyY1GfYSw-unsplash.jpg);
+    width: 40%;
+    height: 500px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.presentacion{
+    width: 60%;
+    height: 500px;
+    background-color: rgba(243, 179, 238, 0.349);
+    box-sizing: border-box;
+    float: right;
+    margin: 0;
+}
+
+#titulo{
+    font-size: 35px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 0.5px #8b8b8be8;
+    margin-top: 20px;
+}
+
+#contenido{
+    color:rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*-------------------------------------------------------- FOOTER -----------------------------------------------------------------------*/
+footer{
+    background-color: rgb(238, 167, 178);
+    padding-bottom: 0.1px;
+    font-family: 'Tiro Telugu', serif;
+}
+
+.contenido-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contactanos{
+    width: 40%;
+    color: rgb(253, 236, 239);
+}
+
+.contactanos h2{
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.contactanos p, #mensaje{
+    font-size: 16px;
+    margin-left: 50px;
+    color: rgb(0, 0, 0);
+}
+
+#ubicacion, #mensaje{
+    font-size: 17px;
+    color: rgb(87, 84, 84);
+}
+
+
+
+#mensaje:hover, #ubicacion:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.redes{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.redes h3{
+    text-align: center;
+    color: rgb(48, 44, 44);
+
+}
+
+.icono-redes i{
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0, .5);
+    text-decoration: none;
+    text-align: center;
+    margin-top: 45px;
+    margin-right: 10px;
+
+}
+
+#icon1{
+    color: rgb(245, 10, 127);
+}
+
+#icon2{
+    color: rgb(60, 178, 207);
+}
+
+#icon3{
+    color: rgb(41, 49, 155);
+}
+
+#icon4{
+    color: rgb(110, 21, 145);
+}
+
+
+#icon1:hover, #icon2:hover, #icon3:hover, #icon4:hover{
+    color: #fff;
+}
+
+
+#copyright{
+    background-color: rgb(245, 106, 127);
+    text-align: center;
+}
+
+
+
+
+/*--------------------------------------------------------- INICIO RESPONSIVE --------------------------------------------------------------*/
+
+
+@media all and (min-width:600px) and (max-width:1023px){
+
+    .menu-navegacion{
+        height: 100%;
+        width: 30vw;
+        top: 0;
+        left: 0;
+        display: flex;
+        transform: translateX(-110%);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+   
+    header:hover .menu-navegacion{
+        transform: translateX(0%);
+    }
+    
+    .contenedor-productos-all{
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .texto-descriptivo{
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .acordeon{
+        width: 100%;
+        padding: 0 20px;
+        height: 500px;
+        margin-top: 20px;
+        
+    }
+
+    
+    #imagen-nosotros {
+        width: 100%;
+        height: 200px;
+    }
+
+    .presentacion{
+        width: 100%;
+        height: 400px;
+    }   
+
+
+    #titulo{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    
+    #contenido{
+        margin-top: 5px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+}
+
+@media all and (max-width:599px){
+    .menu-navegacion{
+        height: 100%;
+        width: 30vw;
+        top: 0;
+        left: 0;
+        display: flex;
+        transform: translateX(-110%);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+   
+    header:hover .menu-navegacion{
+        transform: translateX(0%);
+    }
+    
+    .head h1{
+        padding: 5px;
+        font-size: 25px;
+    }
+    
+    .head p{
+        padding-bottom: 10px;
+        margin-top: -10px;
+        font-size: 20px;
+    
+    }
+
+
+    .contenedor-productos-all{
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .texto-descriptivo{
+        width: 100%;
+        height: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+        
+    }
+
+    .acordeon{
+        width: 100%;
+        padding: 0 20px;
+        height: 500px;
+        margin-top: 20px;
+        
+    }
+
+    
+    #imagen-nosotros {
+        width: 100%;
+        height: 200px;
+    }
+
+    .presentacion{
+        width: 100%;
+        height: 400px;
+    }  
+
+    #titulo{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    
+    #contenido{
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+
+}
