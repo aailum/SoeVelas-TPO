@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
 
 
-*{ /*::before ::after*/
+*{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    /*background-image: linear-gradient(to top, rgb(243, 183, 193) 0%, rgb(180, 206, 245) 99%, rgb(172, 198, 238) 100%);*/
     background-color: rgb(178, 162, 247);
     font-family: 'Tiro Telugu', serif;
     width: 100%;
@@ -65,18 +64,18 @@ input, textarea{
     width: 100%;
     border: none; 
     border-bottom: 1px solid #49454567; 
-    resize: none; /*no deja que se modifique el tamaño de las casillas, en especial la de comentarios*/
+    resize: none; 
 
 }
 
-input:focus,textarea:focus{ /*cuando se esta adentro de las casillas*/
+input:focus,textarea:focus{
     outline: none;
     color: rgb(94, 93, 93);
 }
 
 
 input:focus~label, input:valid~label, 
-textarea:focus~label, textarea:valid~label{ /*cuando se esta adentro de la casilla(focus) y los datos sean validos(valid), se quiere que a label se le haga lo de acontinuacion*/
+textarea:focus~label, textarea:valid~label{ 
     position: absolute;
     top: -14px;
     font-size: 12px;
@@ -133,7 +132,6 @@ button{
 
 #boton1{
     float: left;
-    /* Arriba | Derecha | Abajo | Izquierda */
     margin: 10px 10px 20px 80px;
 }
 
